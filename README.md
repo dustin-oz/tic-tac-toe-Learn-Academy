@@ -17,3 +17,6 @@ This project will challenge your knowledge of React but should also be an exerci
 ### Stretch Goals:
 - As a user, I can see a notification that informs me whether it is currently player one's or player two's turn.
 - As a user, I can choose my marker (X, O, a color, an emoji, etc...).
+
+### Notes
+ - 

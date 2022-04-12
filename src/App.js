@@ -6,7 +6,9 @@ class App extends Component{
   constructor(props){
     super(props)
     this.state = {
-      squares: [0, 0, 0, 0, 0, 0, 0, 0, 0]
+      squares: Array(9).fill(null),
+      winner: null,
+      player: "❌"
     }
   }
 
@@ -14,7 +16,14 @@ class App extends Component{
     return(
       <>
         <h1>Tic Tac Toe</h1>
-        <Square />
+        <div className="gameboard">
+            {this.state.squares.map((value, index) => {
+              return(
+                <Square
+                />
+              )
+            })}
+          </div>
       </>
     )
   }
