@@ -6,11 +6,23 @@ class App extends Component{
   constructor(props){
     super(props)
     this.state = {
-      squares: Array(9).fill(null),
+      squares: [0, 0, 0, 0, 0, 0, 0, 0, 0],
       winner: null,
-      player: "❌"
+      player: "❌",
+      // player2: "⭕️"
     }
   }
+
+  // gamePlay = (index) => {
+  //   const { squares, winner, player } = this.state.
+  //   if(index === player) {
+  //     squares[index] = player
+  //     this.setState({squares: squares})
+  //   } else {
+  //     squares[index] = player2
+  //     this.setState({squares: squares})
+  //   }
+  // }
 
   render(){
     return(
@@ -20,6 +32,9 @@ class App extends Component{
             {this.state.squares.map((value, index) => {
               return(
                 <Square
+                value={this.state.squares}
+                index={index}
+                key={index}
                 />
               )
             })}
