@@ -1,5 +1,38 @@
 .square{
   height: 100px;
   width: 100px;
-  border: 2px solid black;
+  border: 1px solid rgb(117, 114, 114);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  margin: 5px;
+  color: black;
+}
+
+.gameboard {
+  display: flex;
+  flex-wrap: wrap;
+  width: 340px;
+  height: 340px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+body {
+  text-align: center;
+}
+
+button {
+  margin-bottom: 20px;
+  background-color: rgb(45, 45, 219);
+  color: white;
+  padding: 20px 40px;
+  font-size: 22px;
+  border: none;
+  border-radius: 5px;
 }
